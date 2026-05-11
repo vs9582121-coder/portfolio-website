@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vishal Sharma | Professional Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+      scroll-behavior:smooth;
+    }
+
+    body{
+      background:#0f172a;
+      color:white;
+    }
+
+    .navbar{
+      width:100%;
+      padding:20px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:fixed;
+      top:0;
+      background:rgba(15,23,42,0.95);
+      backdrop-filter:blur(10px);
+      z-index:1000;
+    }
+
+    .logo{
+      font-size:26px;
+      font-weight:700;
+      color:#38bdf8;
+    }
+
+    .nav-links a{
+      color:white;
+      text-decoration:none;
+      margin-left:25px;
+      transition:0.3s;
+    }
+
+    .nav-links a:hover{
+      color:#38bdf8;
+    }
+
+    .hero{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:120px 8% 80px;
+      background:
+      linear-gradient(rgba(15,23,42,0.85),rgba(15,23,42,0.92)),
+      url('https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=1600&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
+      text-align:center;
+    }
+
+    .hero-content h1{
+      font-size:65px;
+      margin-bottom:15px;
+      animation:fadeIn 1s ease;
+    }
+
+    .hero-content span{
+      color:#38bdf8;
+    }
+
+    .hero-content p{
+      font-size:22px;
+      color:#cbd5e1;
+      max-width:800px;
+      margin:auto;
+      margin-bottom:30px;
+      line-height:1.8;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:14px 30px;
+      background:#38bdf8;
+      color:#0f172a;
+      font-weight:600;
+      border-radius:10px;
+      text-decoration:none;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      transform:translateY(-3px);
+      background:white;
+    }
+
+    section{
+      padding:90px 8%;
+    }
+
+    .section-title{
+      text-align:center;
+      font-size:42px;
+      margin-bottom:50px;
+      color:#38bdf8;
+    }
+
+    .about-box,
+    .experience-box,
+    .education-box,
+    .contact-box{
+      background:#1e293b;
+      padding:35px;
+      border-radius:18px;
+      margin-bottom:25px;
+      transition:0.4s;
+      box-shadow:0 10px 25px rgba(0,0,0,0.25);
+    }
+
+    .about-box:hover,
+    .experience-box:hover,
+    .education-box:hover,
+    .contact-box:hover{
+      transform:translateY(-8px);
+    }
+
+    .about-box p{
+      line-height:2;
+      color:#e2e8f0;
+      font-size:18px;
+    }
+
+    .skills-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:20px;
+    }
+
+    .skill-card{
+      background:#1e293b;
+      padding:22px;
+      text-align:center;
+      border-radius:15px;
+      font-weight:600;
+      transition:0.4s;
+      border:1px solid transparent;
+    }
+
+    .skill-card:hover{
+      border-color:#38bdf8;
+      transform:scale(1.05);
+    }
+
+    .experience-box h3,
+    .education-box h3{
+      color:#38bdf8;
+      margin-bottom:10px;
+    }
+
+    ul{
+      margin-top:15px;
+      padding-left:20px;
+      color:#cbd5e1;
+      line-height:2;
+    }
+
+    .contact-box p{
+      margin:15px 0;
+      font-size:18px;
+      color:#e2e8f0;
+    }
+
+    footer{
+      text-align:center;
+      padding:25px;
+      background:#020617;
+      color:#94a3b8;
+    }
+
+    @keyframes fadeIn{
+      from{
+        opacity:0;
+        transform:translateY(30px);
+      }
+
+      to{
+        opacity:1;
+        transform:translateY(0);
+      }
+    }
+
+    @media(max-width:768px){
+
+      .hero-content h1{
+        font-size:42px;
+      }
+
+      .hero-content p{
+        font-size:18px;
+      }
+
+      .nav-links{
+        display:none;
+      }
+
+      .section-title{
+        font-size:32px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="logo">Vishal Sharma</div>
+
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <h1>Hello, I'm <span>Vishal Sharma</span></h1>
+
+      <p>
+        Banking & Customer Service Aspirant with practical experience
+        in customer handling, digital services, e-Mitra operations,
+        KYC verification and online banking processes.
+      </p>
+
+      <a href="https://linkedin.com/in/vishal-sharma-18418840a" target="_blank" class="btn">
+        View LinkedIn Profile
+      </a>
+
+    </div>
+
+  </section>
+
+  <section id="about">
+
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about-box">
+
+      <p>
+        I belong to a farming background and have practical experience
+        in customer handling, digital services and e-Mitra operations.
+        I am passionate about banking, technology, sales and future
+        business growth in the food processing sector.
+      </p>
+
+    </div>
+
+  </section>
+
+  <section id="skills">
+
+    <h2 class="section-title">Professional Skills</h2>
+
+    <div class="skills-grid">
+
+      <div class="skill-card">Customer Handling</div>
+      <div class="skill-card">Communication Skills</div>
+      <div class="skill-card">Banking Basics</div>
+      <div class="skill-card">UPI / NEFT / RTGS</div>
+      <div class="skill-card">KYC Verification</div>
+      <div class="skill-card">Digital Services</div>
+      <div class="skill-card">AI Tools</div>
+      <div class="skill-card">Problem Solving</div>
+      <div class="skill-card">Email Handling</div>
+      <div class="skill-card">Typing Basics</div>
+
+    </div>
+
+  </section>
+
+  <section id="experience">
+
+    <h2 class="section-title">Experience</h2>
+
+    <div class="experience-box">
+
+      <h3>e-Mitra & Digital Service Operator</h3>
+
+      <p>Self-Managed Operations | Rajasthan | July 2025 – Present</p>
+
+      <ul>
+        <li>Assisted customers in digital and banking services</li>
+        <li>Handled online applications and digital documentation</li>
+        <li>Performed KYC verification</li>
+        <li>Worked with UPI, NEFT & RTGS transactions</li>
+      </ul>
+
+    </div>
+
+    <div class="experience-box">
+
+      <h3>Farming & Agricultural Operations</h3>
+
+      <ul>
+        <li>Worked in family farming activities</li>
+        <li>Understanding of rural market and customer behavior</li>
+        <li>Basic knowledge of agriculture and crop planning</li>
+      </ul>
+
+    </div>
+
+  </section>
+
+  <section id="education">
+
+    <h2 class="section-title">Education</h2>
+
+    <div class="education-box">
+
+      <h3>Bachelor of Arts (B.A.)</h3>
+
+      <p>University of Kota (2020)</p>
+
+      <br>
+
+      <h3>Additional Qualifications</h3>
+
+      <p>RSCIT & PGDCA</p>
+
+    </div>
+
+  </section>
+
+  <section id="contact">
+
+    <h2 class="section-title">Contact</h2>
+
+    <div class="contact-box">
+
+      <p>📞 8209156719</p>
+      <p>📧 vs9582121@gmail.com</p>
+      <p>📍 Bundi, Rajasthan</p>
+
+      <br>
+
+      <a href="https://linkedin.com/in/vishal-sharma-18418840a" class="btn" target="_blank">
+        Connect on LinkedIn
+      </a>
+
+    </div>
+
+  </section>
+
+  <footer>
+
+    © 2026 Vishal Sharma | Professional Portfolio Website
+
+  </footer>
+
+</body>
+    </html>
